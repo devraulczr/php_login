@@ -7,14 +7,16 @@ API simples para recuperação de senha via código enviado por e-mail usando **
 ### 📩 1. Solicitar Código de Recuperação  
 **Método:** `GET`  
 GET http://seuservidor/api.php?action=forgot_password&email=seu@email.com
+
 📌 **Parâmetro:**  
 - `email` → O e-mail cadastrado na base de dados.  
 
 📨 **Resposta:**  
 ```json
 {"message": "Código gerado e enviado para seu@email.com"}
+🔄 2. Redefinir Senha
+Método: GET
 
-### 🔄 2. Redefinir Senha
 GET http://seuservidor/api.php?action=reset_password&email=seu@email.com&code=ABC123&new_password=novasenha
 📌 Parâmetros:
 
@@ -23,14 +25,13 @@ code → Código recebido no e-mail.
 new_password → Nova senha desejada.
 🔓 Resposta:
 ✅ Sucesso
+
 {"message": "Senha redefinida com sucesso"}
 ❌ Erro
+
 {"error": "Código inválido ou expirado"}
-
-
 🛠 Tecnologias Usadas
 PHP (Backend)
 MySQL (Banco de dados)
 Brevo (Envio de e-mails)
-
 Feito com ❤️ por Raul 🚀
