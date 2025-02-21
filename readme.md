@@ -12,7 +12,7 @@ API simples para recuperação de senha via código enviado por e-mail usando **
 **Método:** `GET`  
 **URL:**  
 ```
-GET http://seuservidor/api.php?action=forgot_password&email=seu@email.com
+GET http://seuservidor/api/api.php?action=forgot_password&email=seu@email.com
 ```
 
 📌 **Parâmetro:**  
@@ -34,7 +34,7 @@ GET http://seuservidor/api.php?action=forgot_password&email=seu@email.com
 **Método:** `GET`  
 **URL:**  
 ```
-GET http://seuservidor/api.php?action=reset_password&email=seu@email.com&code=ABC123&new_password=novasenha
+GET http://seuservidor/api/api.php?action=reset_password&email=seu@email.com&code=ABC123&new_password=novasenha
 ```
 
 📌 **Parâmetros:**  
